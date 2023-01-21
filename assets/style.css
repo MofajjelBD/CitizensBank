@@ -29,24 +29,41 @@ body {
     max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
 }
 
-.baner_area img {
-    width: 100%;
-}
+/* .bolar {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 50%;
+    border-bottom: 450px solid rgba(0, 148, 92, 0.8);
+    border-left: 120px solid transparent;
+    width: 41%;
+} */
 
 /* investment area css */
+.investment_area {
+    margin: 35px 0;
+}
 
 .investment_area h2 {
     text-align: center;
     font-size: 30px;
     font-style: normal;
     color: #00945f;
+    padding: 30px 0;
+    margin: 0;
 }
 
 hr {
     border: 2px solid #00945F;
     width: 70px;
+    margin: 0 auto;
 }
 
 .tex_size {
@@ -58,6 +75,7 @@ hr {
     font-size: 17px;
     font-style: normal;
     color: #888888;
+    margin: 25px 0;
 }
 
 .investment_area button {
@@ -70,24 +88,33 @@ hr {
 
 .view_carear {
     text-align: center;
+    margin: 25px 0;
 }
 
 /* citizens_area area css */
+.citizens_area {
+    margin: 35px 0;
+}
+
 .citizens_area h2 {
     text-align: center;
     font-size: 30px;
+    font-style: normal;
     color: #00945f;
+    padding: 30px 0;
+    margin: 0;
 }
 
 .grid_containr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px;
+    margin: 20px 0;
 }
 
 .grid_box {
     border-right: 1px solid #888888;
-    margin: 30px 0;
+    margin: 40px 0;
     padding: 0 30px 0 0px;
 }
 
@@ -100,6 +127,7 @@ hr {
     font-size: 24px;
     color: #00945f;
     margin-top: 0;
+    font-weight: 500;
 }
 
 .citizens_area p {
@@ -134,7 +162,8 @@ hr {
 .wraper_box p {
     font-size: 17px;
     color: #888888;
-    margin: 5px 0;
+    padding: 5px 0;
+    margin: 0;
 }
 
 /* review_area area css */
@@ -227,7 +256,7 @@ footer .social_media li a img {
 
 .nav_menu li a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .nav_menu li:first-child {
@@ -236,4 +265,187 @@ footer .social_media li a img {
 
 .nav_menu li:last-child {
     border-right: none;
+}
+
+
+
+/*************************
+ media css start 
+ **************************/
+@media only screen and (min-width: 993px) {
+    .bolar {
+        position: absolute;
+        top: 0;
+        bottom: 4px;
+        left: 50%;
+        border-bottom: 450px solid rgba(0, 148, 92, 0.8);
+        border-left: 100px solid transparent;
+        width: 42.3%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .baner_area {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .containr {
+        max-width: 1250px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .logo_area {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .logo_area img {
+        height: 25px;
+    }
+
+    .baner_area {
+        height: 300px;
+    }
+
+    .investment_area h2 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    .investment_area p {
+        font-size: 14px;
+    }
+
+    .view_carear {
+        margin: 10px 0;
+    }
+
+    .investment_area button {
+        font-size: 14px;
+    }
+
+    .citizens_area h2 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    hr {
+        border: 1px solid #00945F;
+    }
+
+    .grid_containr {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid_box {
+        padding: 0 0px 0 0px;
+        margin: 20px 0;
+        border-right: none;
+    }
+
+    .grid_box:nth-child(2n+0) {
+        padding-left: 0px;
+    }
+
+    .citizens_area h3 {
+        font-size: 18px;
+    }
+
+    .citizens_area p {
+        font-size: 14px;
+    }
+
+    .citizens_area a {
+        font-size: 14px;
+    }
+
+    .citizen_loan h2 {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .wraper_box {
+        padding: 0px 5px;
+    }
+
+    .wraper_box p {
+        font-size: 14px;
+    }
+
+    .grid_containr_man {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px 0px;
+    }
+
+    .grid_man .profile {
+        max-width: 140px;
+        max-height: 140px;
+    }
+
+    .comment p {
+        font-size: 14px;
+    }
+
+    .name p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .logo_area {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .logo_area img {
+        height: 20px;
+    }
+
+    .baner_area {
+        height: 200px;
+    }
+
+    .investment_area h2 {
+        font-size: 18px;
+        padding: 15px 0;
+        font-weight: 400;
+    }
+
+    .citizens_area h2 {
+        font-size: 18px;
+        padding: 20px 0;
+        font-weight: 400;
+
+    }
+
+    .citizen_loan h2 {
+        font-size: 18px;
+        padding: 10px 0;
+        font-weight: 400;
+    }
+
+    .citizens_area h3 {
+        font-size: 16px;
+    }
+
+    .grid_man .profile {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .comment p {
+        font-size: 12px;
+    }
+
+    .name p {
+        font-size: 12px;
+    }
+
 }
