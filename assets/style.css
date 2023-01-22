@@ -76,6 +76,7 @@ hr {
     font-style: normal;
     color: #888888;
     margin: 25px 0;
+    line-height: 20px;
 }
 
 .investment_area button {
@@ -135,6 +136,7 @@ hr {
     font-style: normal;
     color: #888888;
     margin: 0;
+    line-height: 24px;
 }
 
 .citizens_area a {
@@ -164,6 +166,7 @@ hr {
     color: #888888;
     padding: 5px 0;
     margin: 0;
+    line-height: 30px;
 }
 
 /* review_area area css */
@@ -183,6 +186,8 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 10px;
+    text-align: justify;
 }
 
 .grid_man .profile {
@@ -201,6 +206,7 @@ hr {
     color: #888888;
     margin: 5px 0;
     position: relative;
+    font-style: italic;
 }
 
 .comment p::before {
@@ -336,16 +342,14 @@ footer .social_media li a img {
     }
 
     .investment_area p {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .view_carear {
         margin: 10px 0;
     }
 
-    .investment_area button {
-        font-size: 14px;
-    }
 
     .citizens_area h2 {
         font-size: 24px;
@@ -362,8 +366,10 @@ footer .social_media li a img {
 
     .grid_box {
         padding: 0 0px 0 0px;
-        margin: 20px 0;
+        margin: 14px 0;
         border-right: none;
+        border-bottom: 1px solid #888888;
+        padding-bottom: 20px;
     }
 
     .grid_box:nth-child(2n+0) {
@@ -371,29 +377,23 @@ footer .social_media li a img {
     }
 
     .citizens_area h3 {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .citizens_area p {
-        font-size: 14px;
-    }
-
-    .citizens_area a {
-        font-size: 14px;
+        line-height: 24px;
     }
 
     .citizen_loan h2 {
-        font-size: 18px;
+        font-size: 22px;
         padding: 10px 0;
     }
 
     .wraper_box {
-        padding: 0px 5px;
+        padding: 0px 15px;
     }
 
-    .wraper_box p {
-        font-size: 14px;
-    }
 
     .grid_containr_man {
         grid-template-columns: repeat(1, 1fr);
@@ -406,13 +406,6 @@ footer .social_media li a img {
         max-height: 140px;
     }
 
-    .comment p {
-        font-size: 14px;
-    }
-
-    .name p {
-        font-size: 14px;
-    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -431,39 +424,27 @@ footer .social_media li a img {
     }
 
     .investment_area h2 {
-        font-size: 18px;
+        font-size: 22px;
         padding: 15px 0;
         font-weight: 400;
     }
 
     .citizens_area h2 {
-        font-size: 18px;
+        font-size: 22px;
         padding: 20px 0;
         font-weight: 400;
 
     }
 
     .citizen_loan h2 {
-        font-size: 18px;
+        font-size: 22px;
         padding: 10px 0;
         font-weight: 400;
-    }
-
-    .citizens_area h3 {
-        font-size: 16px;
     }
 
     .grid_man .profile {
         max-width: 120px;
         max-height: 120px;
-    }
-
-    .comment p {
-        font-size: 12px;
-    }
-
-    .name p {
-        font-size: 12px;
     }
 
 }
