@@ -200,6 +200,24 @@ hr {
     font-size: 17px;
     color: #888888;
     margin: 5px 0;
+    position: relative;
+}
+
+.comment p::before {
+    content: "“";
+    font-size: 24px;
+    color: #888888;
+    left: -9px;
+    position: absolute;
+    line-height: 0;
+    top: 9px;
+}
+
+.comment p::after {
+    content: "”";
+    font-size: 24px;
+    color: #888888;
+    position: absolute;
 }
 
 .name p {
